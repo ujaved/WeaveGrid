@@ -1,11 +1,11 @@
 Simple CRUD API for the filesystem
 -----------------------------------
 
-CRUD REST API for a portion of user's filesystem, with the user specifying a root directory.
+CRUD REST API for a portion of the host user's filesystem, with the user specifying a root directory.
 
 Run API server
 --------------
-Run the script `run.sh` to launch the API container. This takes one comamnd-line argument specifying the root directory, for example: `./run.sh '/'` or `./run.sh '.'`
+Run the script `run.sh` to launch the API container. This takes one comamnd-line argument specifying the root directory on the host filesystem, for example: `./run.sh '/Users/ujaved/Downloads/'` or `./run.sh '/'`
 The script creates the image from the Dockerfile and lauches the container with the server endpoint http://localhost:5000, returning the container ID.
 
 API Calls and Requests
